@@ -1,6 +1,6 @@
 function createSidebar() {
     // Load the JSON structure (assuming it's in a separate file)
-    fetch("sidebar.json")
+    fetch("\pwp\sidebar.json")
         .then(response => response.json())
         .then(data => {
             const sidebar = data.sidebar;
