@@ -5,7 +5,7 @@
       "submenu": [
         {
           "title": "progetti",
-          "link": "#"
+          "link": "/pwp/pages/progetti_stat.html"
         },
         {
           "title": "risorse",
@@ -52,7 +52,7 @@
       "submenu": [
         {
           "title": "cose che ho scritto",
-          "link": "/pwp/pages/scritti"
+          "link": "/pwp/pages/scritti.html"
         },
         {
           "title": "albero genealogico",
