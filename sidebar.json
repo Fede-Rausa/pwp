@@ -18,11 +18,11 @@
       "submenu": [
         {
           "title": "progetti",
-          "link": "#"
+          "link": "/pwp/pages/programmi.html"
         },
         {
           "title": "risorse",
-          "link": "/pwp/pages/risorseMusica.html"
+          "link": "#"
         }
       ]
     },
@@ -31,7 +31,7 @@
       "submenu": [
         {
           "title": "risorse",
-          "link": "#"
+          "link": "/pwp/pages/risorseMusica.html"
         },
         {
           "title": "myplaylist",
