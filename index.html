@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FR_PWP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">  <!-- import bootstrap -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Add icon library -->
+    <link rel="stylesheet" href="style00.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="sbbox col-auto px-0">  <!-- contenitore della sidebar -->
+                <div id = "csidebar" class="collapse collapse-horizontal show border-end"> <!-- collassatore della sidebar -->
+                    <div id="sidebar-nav" class="list-group border-0 rounded-0">
+                        <h6 class="px-2" href="/pwp/index.html">HOME</h6>
+                    </div>
+                </div>
+            </div>
+            <main class="col ps-md-2 pt-2">
+                <a data-bs-target="#csidebar" data-bs-toggle="collapse" class="menubtn border rounded-1 px-2 py-2"><i class="fa fa-bars fa-2x"></i></a> <!-- icon btn -->
+                <hr>  <!-- line -->
+                <div class="row">
+                    <div class="col-12">
+                        <github-md>
+
+
+## HOME
+
+$babbo = nonno per gli amici + \frac{\lambda}{78}$
+
+
+
+
+
+
+
+                        </github-md>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}};</script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag-GitHub.js"></script> 
+    <script>renderMarkdown();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS (needed for the collapse functionality) -->
+    <script src="sidebar00.js"></script>
+    <script> createSidebar();</script>
+</body>
+</html>

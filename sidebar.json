@@ -1,0 +1,69 @@
+{
+  "sidebar": [
+    {
+      "title": "Statistica",
+      "submenu": [
+        {
+          "title": "progetti",
+          "link": "#"
+        },
+        {
+          "title": "risorse",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "programmazione",
+      "submenu": [
+        {
+          "title": "progetti",
+          "link": "#"
+        },
+        {
+          "title": "risorse",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "musica",
+      "submenu": [
+        {
+          "title": "risorse",
+          "link": "#"
+        },
+        {
+          "title": "myplaylist",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "libri buoni",
+      "link": "#"
+    },
+    {
+      "title": "perle",
+      "link": "#"
+    },
+    {
+      "title": "vita",
+      "submenu": [
+        {
+          "title": "cose che ho scritto",
+          "link": "/pwp/pages/scritti"
+        },
+        {
+          "title": "albero genealogico",
+          "link": "#"
+        },
+        {
+          "title": "CV",
+          "link": "#"
+        }
+      ]
+    }
+  ]
+}
+  

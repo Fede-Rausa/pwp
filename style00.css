@@ -1,0 +1,23 @@
+
+#sidebar-nav {
+width: 160px;
+background-color: #495057;
+}
+
+.list-group{
+    background-color: #495057;
+    color: white;
+}
+.list-group-item{
+    background-color: #495057;
+    color: white;
+    border-color: #495057;
+}
+.list-group-item:hover{
+    background-color: #4b6d8f;
+}
+
+.menubtn{
+    background-color:rgb(185, 203, 209);
+    color:  #3590ea;
+}
