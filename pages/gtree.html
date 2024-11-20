@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FR_PWP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">  <!-- import bootstrap -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Add icon library -->
+    <link rel="stylesheet" href="/pwp/style00.css">
+
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-graph.min.js"></script>
+<script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.anychart.com/releases/8.11.0/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4"/> 
+<link rel="stylesheet" type="text/css" href="https://cdn.anychart.com/releases/8.11.0/fonts/css/anychart-font.min.css"/>
+<script>
+anychart.onDocumentReady(function () {
+
+    // create data
+    var data = {
+      nodes: [
+{id:"Giuseppe Massaro", group:"Massaro", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:50, y:617},
+{id:"Maria Nardò", group:"Massaro", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:68.5, y:604},
+{id:"Tommaso Massaro", group:"Massaro", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:72, y:416},
+{id:"Rosa Massaro", group:"Massaro", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:90.5, y:406},
+{id:"Marco Sessarego", group:"Massaro", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:94, y:311},
+{id:"Linda Maria Sessarego", group:"Massaro", generation:"Alfa", nickname:"assente", mestiere:"assente", link:"assente", x:105, y:112},
+{id:"Elisabetta Massaro", group:"Massaro", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:123.5, y:315},
+{id:"Annamaria Massaro", group:"Massaro", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:142, y:300},
+{id:"Ellen Sterzik", group:"Massaro", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:153, y:406},
+{id:"Paola Rausa", group:"Rausa", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:122.5, y:308},
+{id:"Massimo Rausa", group:"Rausa", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:141, y:301},
+{id:"Italo Rausa", group:"Rausa", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:122, y:503},
+{id:"Matilde Rausa", group:"Rausa", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:140.5, y:501},
+{id:"Fulvio Ferraris", group:"Rausa", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:159, y:512},
+{id:"Lorenzo Ragusa", group:"Rausa", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:170, y:603},
+{id:"Giuseppina Politi", group:"Rausa", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:188.5, y:608},
+{id:"Umberto Giambruni", group:"Rausa", generation:"Z", nickname:"assente", mestiere:"assente", link:"assente", x:184.5, y:119},
+{id:"Riccardo Barile", group:"Rausa", generation:"Y", nickname:"assente", mestiere:"assente", link:"assente", x:188, y:218},
+{id:"Romilda revello", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:255, y:615},
+{id:"Giorgio Revello", group:"Vassallo", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:258.5, y:518},
+{id:"Alessandra Revello", group:"Vassallo", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:284.5, y:316},
+{id:"Roberto Revello", group:"Vassallo", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:303, y:311},
+{id:"Gianna Raffo", group:"Vassallo", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:291.5, y:402},
+{id:"Lismo Raffo", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:317.5, y:617},
+{id:"Piera Vassallo", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:336, y:614},
+{id:"Benedetta Oriana Vassallo", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:354.5, y:617},
+{id:"Teresa Vassallo", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:373, y:606},
+{id:"Giovanna Vassallo", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:391.5, y:608},
+{id:"Pietro Vassallo", group:"Vassallo", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:335, y:711},
+{id:"Mario Vassallo", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:421, y:607},
+{id:"Milli", group:"Vassallo", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:439.5, y:611},
+{id:"Piero Vassallo", group:"Vassallo", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:398, y:409},
+{id:"Ines Cortazzo", group:"Vassallo", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:416.5, y:413},
+{id:"Roberto Vassallo", group:"Vassallo", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:442.5, y:302},
+{id:"Andrea Vassallo", group:"Vassallo", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:461, y:302},
+{id:"Rossella Garibaldi", group:"Garibaldi", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:330, y:508},
+{id:"Giampiero Garibaldi", group:"Garibaldi", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:348.5, y:519},
+{id:"Bruno Garibaldi", group:"Garibaldi", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:412, y:617},
+{id:"Elisa Ferrari", group:"Garibaldi", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:340.5, y:719},
+{id:"Guido Garibaldi", group:"Garibaldi", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:359, y:703},
+{id:"Costante Garibaldi", group:"Garibaldi", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:452.5, y:610},
+{id:"Rosa Garibaldi", group:"Garibaldi", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:471, y:612},
+{id:"Ezio Garibaldi", group:"Garibaldi", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:489.5, y:609},
+{id:"Marisa Agriconi", group:"Garibaldi", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:433, y:502},
+{id:"Marina Garibaldi", group:"Garibaldi", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:444, y:415},
+{id:"Annita Garibaldi", group:"Garibaldi", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:462.5, y:406},
+{id:"Angela Mirale", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:422.5, y:705},
+{id:"Nicola Lambrinidis", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:441, y:702},
+{id:"Caterina Lambrinidu", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:542, y:604},
+{id:"Janakis Lambrinidis", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:560.5, y:616},
+{id:"John Persich", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:481.5, y:706},
+{id:"Regina Mirale", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:500, y:702},
+{id:"Lucia Persich Senior", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:601, y:605},
+{id:"Adriano Persich", group:"Persich", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:529.5, y:508},
+{id:"Paolo Persich", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:630.5, y:618},
+{id:"Policarpo Persich", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:649, y:606},
+{id:"Michele Persich Senior", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:667.5, y:608},
+{id:"Maria Persich", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:686, y:619},
+{id:"Vincenza Gloghini", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:704.5, y:618},
+{id:"Angelica Marangos", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:723, y:603},
+{id:"Lucia Persich Junior", group:"Persich", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:614, y:507},
+{id:"Benito Varlonga", group:"Persich", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:632.5, y:507},
+{id:"Rita Ratto", group:"Persich", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:636, y:412},
+{id:"Giovanni Persich Junior", group:"Persich", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:654.5, y:407},
+{id:"Maria Salomone", group:"Persich", generation:"Greatest", nickname:"assente", mestiere:"assente", link:"assente", x:785.5, y:613},
+{id:"Angela Persich", group:"Persich", generation:"Boomers", nickname:"assente", mestiere:"assente", link:"assente", x:684, y:401},
+{id:"Michele Persich Junior", group:"Persich", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:695, y:516},
+{id:"Giovanna Ramognino", group:"Persich", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:713.5, y:517},
+{id:"Antonio Dragonetti", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:694.5, y:704},
+{id:"Regina Persich", group:"Persich", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:743, y:518},
+{id:"Giovanni Persich 38", group:"Persich", generation:"Silent", nickname:"assente", mestiere:"assente", link:"assente", x:761.5, y:513},
+{id:"Angela Garibaldi", group:"Garibaldi", generation:"X", nickname:"assente", mestiere:"assente", link:"assente", x:488.5, y:307},
+{id:"Federico Rausa", group:"Garibaldi", generation:"Z", nickname:"assente", mestiere:"assente", link:"assente", x:447, y:105},
+{id:"Elisabetta Rausa", group:"Rausa", generation:"Z", nickname:"assente", mestiere:"assente", link:"assente", x:221.5, y:103},
+{id:"Domenico Mirale", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:735, y:701},
+{id:"Giovanni Mirale", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:753.5, y:714},
+{id:"Vittorio Persich", group:"Persich", generation:"Lost", nickname:"assente", mestiere:"assente", link:"assente", x:772, y:713}
+      ],
+      edges: [
+        {from: "Giuseppe Massaro", to: "Maria Nardò"},
+        {from: "Giuseppe Massaro", to: "Tommaso Massaro"},
+        {from: "Maria Nardò",   to: "Tommaso Massaro"},
+        {from: "Giuseppe Massaro",   to: "Rosa Massaro"},
+        {from: "Maria Nardò",    to: "Rosa Massaro"},
+        {from: "Tommaso Massaro", to: "Ellen Sterzik"},
+        {from: "Tommaso Massaro", to: "Annamaria Massaro"},
+        {from: "Tommaso Massaro",   to: "Elisabetta Massaro"},
+        {from: "Ellen Sterzik",   to: "Annamaria Massaro"},
+        {from: "Ellen Sterzik",    to: "Elisabetta Massaro"},
+        {from: "Elisabetta Massaro", to: "Linda Maria Sessarego"},
+        {from: "Marco Sessarego", to: "Linda Maria Sessarego"},
+        {from: "Elisabetta Massaro", to: "Marco Sessarego"},
+        {from: "Rosa Massaro", to: "Italo Rausa"},
+        {from: "Rosa Massaro",   to: "Paola Rausa"},
+        {from: "Rosa Massaro",   to: "Massimo Rausa"},
+        {from: "Italo Rausa",    to: "Paola Rausa"},
+        {from: "Italo Rausa", to: "Massimo Rausa"},
+        {from: "Paola Rausa", to: "Umberto Giambruni"},
+        {from: "Paola Rausa",   to: "Riccardo Barile"},
+        {from: "Lorenzo Ragusa",   to: "Giuseppina Politi"},
+        {from: "Lorenzo Ragusa",    to: "Italo Rausa"},
+        {from: "Lorenzo Ragusa", to: "Matilde Rausa"},
+        {from: "Giuseppina Politi", to: "Italo Rausa"},
+        {from: "Giuseppina Politi",   to: "Matilde Rausa"},
+        {from: "Matilde Rausa",   to: "Fulvio Ferraris"},
+        {from: "Giorgio Revello",    to: "Gianna Raffo"},
+        {from: "Giorgio Revello", to: "Alessandra Revello"},
+        {from: "Giorgio Revello", to: "Roberto Revello"},
+        {from: "Gianna Raffo",   to: "Alessandra Revello"},
+        {from: "Gianna Raffo",   to: "Roberto Revello"},
+        {from: "Romilda revello",    to: "Giorgio Revello"},
+        {from: "Lismo Raffo", to: "Gianna Raffo"},
+        {from: "Lismo Raffo", to: "Piera Vassallo"},
+        {from: "Piera Vassallo",   to: "Gianna Raffo"},
+        {from: "Pietro Vassallo",   to: "Giovanna Vassallo"},
+        {from: "Pietro Vassallo",    to: "Teresa Vassallo"},
+        {from: "Pietro Vassallo", to: "Benedetta Oriana Vassallo"},
+        {from: "Pietro Vassallo", to: "Piera Vassallo"},
+        {from: "Pietro Vassallo", to: "Mario Vassallo"},
+        {from: "Mario Vassallo", to: "Milli"},
+        {from: "Mario Vassallo", to: "Piero Vassallo"},
+        {from: "Piero Vassallo", to: "Ines Cortazzo"},
+        {from: "Ines Cortazzo", to: "Andrea Vassallo"},
+        {from: "Ines Cortazzo", to: "Roberto Vassallo"},
+        {from: "Piero Vassallo", to: "Andrea Vassallo"},
+        {from: "Piero Vassallo", to: "Roberto Vassallo"},
+        {from: "Benedetta Oriana Vassallo",   to: "Bruno Garibaldi"},
+        {from: "Benedetta Oriana Vassallo",   to: "Rossella Garibaldi"},
+        {from: "Benedetta Oriana Vassallo",    to: "Giampiero Garibaldi"},
+        {from: "Bruno Garibaldi", to: "Rossella Garibaldi"},
+        {from: "Bruno Garibaldi", to: "Giampiero Garibaldi"},
+        {from: "Guido Garibaldi",   to: "Elisa Ferrari"},
+        {from: "Guido Garibaldi",   to: "Bruno Garibaldi"},
+        {from: "Guido Garibaldi",    to: "Costante Garibaldi"},
+        {from: "Guido Garibaldi", to: "Rosa Garibaldi"},
+        {from: "Guido Garibaldi", to: "Ezio Garibaldi"},
+        {from: "Elisa Ferrari", to: "Bruno Garibaldi"},
+        {from: "Elisa Ferrari", to: "Costante Garibaldi"},
+        {from: "Elisa Ferrari", to: "Rosa Garibaldi"},
+        {from: "Elisa Ferrari", to: "Ezio Garibaldi"},
+        {from: "Ezio Garibaldi",   to: "Marina Garibaldi"},
+        {from: "Ezio Garibaldi",   to: "Annita Garibaldi"},
+        {from: "Ezio Garibaldi",    to: "Marisa Agriconi"},
+        {from: "Marisa Agriconi", to: "Marina Garibaldi"},
+        {from: "Marisa Agriconi", to: "Annita Garibaldi"},
+        {from: "Nicola Lambrinidis",   to: "Angela Mirale"},
+        {from: "Nicola Lambrinidis",   to: "Caterina Lambrinidu"},
+        {from: "Angela Mirale",    to: "Caterina Lambrinidu"},
+        {from: "Nicola Lambrinidis",    to: "Janakis Lambrinidis"},
+        {from: "Angela Mirale",    to: "Janakis Lambrinidis"},
+        {from: "Caterina Lambrinidu", to: "Regina Persich"},
+        {from: "Caterina Lambrinidu", to: "Giovanni Persich 38"},
+        {from: "Michele Persich Senior", to: "Caterina Lambrinidu"},
+        {from: "Michele Persich Senior",   to: "Regina Persich"},
+        {from: "Michele Persich Senior",   to: "Giovanni Persich 38"},
+        {from: "John Persich",   to: "Regina Mirale"},
+        {from: "John Persich",    to: "Lucia Persich Senior"},
+        {from: "John Persich", to: "Maria Persich"},
+        {from: "John Persich", to: "Policarpo Persich"},
+        {from: "John Persich",   to: "Paolo Persich"},
+        {from: "John Persich",   to: "Michele Persich Senior"},
+        {from: "Regina Mirale",   to: "Lucia Persich Senior"},
+        {from: "Regina Mirale",    to: "Maria Persich"},
+        {from: "Regina Mirale", to: "Policarpo Persich"},
+        {from: "Regina Mirale", to: "Paolo Persich"},
+        {from: "Regina Mirale", to: "Michele Persich Senior"},
+        {from: "Paolo Persich",   to: "Vincenza Gloghini"},
+        {from: "Paolo Persich",   to: "Lucia Persich Junior"},
+        {from: "Paolo Persich",    to: "Adriano Persich"},
+        {from: "Vincenza Gloghini", to: "Lucia Persich Junior"},
+        {from: "Vincenza Gloghini", to: "Adriano Persich"},
+        {from: "Adriano Persich",   to: "Rita Ratto"},
+        {from: "Lucia Persich Junior",   to: "Benito Varlonga"},
+        {from: "Policarpo Persich",    to: "Angelica Marangos"},
+        {from: "Policarpo Persich", to: "Giovanni Persich Junior"},
+        {from: "Policarpo Persich", to: "Michele Persich Junior"},
+        {from: "Angelica Marangos",   to: "Giovanni Persich Junior"},
+        {from: "Angelica Marangos",   to: "Michele Persich Junior"},
+        {from: "Giovanni Persich Junior",    to: "Maria Salomone"},
+        {from: "Giovanni Persich Junior", to: "Angela Persich"},
+        {from: "Maria Salomone", to: "Angela Persich"},
+        {from: "Michele Persich Junior",   to: "Giovanna Ramognino"},
+        {from: "Maria Persich",   to: "Antonio Dragonetti"},
+        {from: "Regina Persich",    to: "Giampiero Garibaldi"},
+        {from: "Regina Persich", to: "Angela Garibaldi"},
+        {from: "Giampiero Garibaldi", to: "Angela Garibaldi"},
+        {from: "Angela Garibaldi",   to: "Massimo Rausa"},
+        {from: "Angela Garibaldi",   to: "Elisabetta Rausa"},
+        {from: "Angela Garibaldi",    to: "Federico Rausa"},
+        {from: "Massimo Rausa",   to: "Elisabetta Rausa"},
+        {from: "Massimo Rausa",    to: "Federico Rausa"},
+        {from: "Domenico Mirale", to: "Regina Mirale"},
+        {from: "Giovanni Mirale", to: "Angela Mirale"},
+        {from: "Vittorio Persich", to: "John Persich"}
+      ]
+    };
+
+    // create a chart and set the data
+    chart = anychart.graph(data);
+
+    var massa = chart.group('Massaro');
+    var rausa = chart.group('Rausa');
+    var garib = chart.group('Garibaldi');
+    var vassa = chart.group('Vassallo');
+    var persi = chart.group('Persich');
+
+
+    massa.normal().shape("star4");
+    rausa.normal().shape("diamond");
+    garib.normal().shape("roundedRect");
+    vassa.normal().shape("star6");
+    persi.normal().shape("cross");
+
+// set the fill of nodes in groups
+    massa.normal().fill("#00FFFF");
+    massa.hovered().fill("white");
+    massa.selected().fill("#00FFFF");
+    rausa.normal().fill("#DC143C");
+    rausa.hovered().fill("white");
+    rausa.selected().fill("#DC143C");
+    garib.normal().fill("#00FF7F");
+    garib.hovered().fill("white");
+    garib.selected().fill("#00FF7F");
+    vassa.normal().fill("#4169E1");
+    vassa.hovered().fill("white");
+    vassa.selected().fill("#4169E1");
+    persi.normal().fill("#8B0000");
+    persi.hovered().fill("white");
+    persi.selected().fill("#8B0000");
+
+    chart.nodes().labels().enabled(true);
+    massa.labels().fontColor("#000080");
+    rausa.labels().fontColor("#DC143C");
+    garib.labels().fontColor("#2E8B57");
+    vassa.labels().fontColor("#4169E1");
+    persi.labels().fontColor("#8B0000");
+
+    // set the chart title
+    chart.title("Genealogic Tree");
+
+    // configure labels of nodes
+    chart.nodes().labels().format("{%id}");
+    chart.nodes().labels().fontSize(6);
+    chart.nodes().labels().fontWeight(600);
+
+    // configure tooltips of nodes
+    chart.nodes().tooltip().useHtml(true);
+    chart.nodes().tooltip().format(
+      "<span style='font-weight:bold'>{%id}</span><br>clan: {%group}<br>generation: {%generation}<br>soprannome: {%nickname}<br>mestiere: {%mestiere}"
+    );
+
+  chart.listen('dblClick', function(e) {
+    var tag = e.domTarget.tag;
+    if (tag) {
+      console.log(`Clicked ${tag.type} with ID ${tag.id}`);
+
+      if (tag.type === 'node') {
+        // get url from data directly
+        var url;
+        for (var i = 0; i < data.nodes.length; i++) {
+          if (data.nodes[i].id === tag.id) {
+            url = data.nodes[i].link;
+            break;
+          }
+        }
+
+        // open url
+        window.open(url, '_blank');
+      }
+    }
+  });
+
+
+    // add a zoom control panel
+    var zoomController = anychart.ui.zoom();
+    zoomController.target(chart);
+    zoomController.render();
+
+
+    // set the container id
+    chart.container("container");
+
+    // initiate drawing the chart
+    chart.draw();
+});
+
+// set the layout type
+function albero() {
+  chart.layout().type('fixed');
+  siTemp();
+}
+
+function anello() {
+  chart.layout().type('forced');
+  chart.layout().iterationCount(0);
+  noTemp();
+}
+
+function centroMinimo() {
+  chart.layout().type('forced');
+  chart.layout().iterationCount(100);
+  noTemp();
+}
+
+function siTemp(){
+document.getElementById("gatto").innerHTML = "2012<br><br><br><br>2000<br><br><br><br><br>1980<br><br><br><br><br><br>1960<br><br><br><br<br><br><br>1940<br><br><br><br><br>1920<br><br><br><br><br>1900<br<br><br><br><br><br><br><br>1880";
+document.getElementById("gatto").style.height = "1000px";
+document.getElementById("gatto").style.position = "absolute";
+document.getElementById("gatto").style.left = "1%";
+document.getElementById("gatto").style.top = "20px";
+}
+
+function noTemp(){
+document.getElementById("gatto").innerHTML = "";
+document.getElementById("gatto").style.height = "1px";
+document.getElementById("gatto").style.position = "absolute";
+document.getElementById("gatto").style.left = "0%";
+document.getElementById("gatto").style.top = "1px";
+}
+
+</script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="sbbox col-auto px-0">  <!-- contenitore della sidebar -->
+                <div id = "csidebar" class="collapse collapse-horizontal show border-end"> <!-- collassatore della sidebar -->
+                    <div id="sidebar-nav" class="list-group border-0 rounded-0">
+                        <h6 class="px-2"><a class = "nav-link" style="text-decoration: none;" href="/pwp/index.html">HOME</a></h6>
+                    </div>
+                </div>
+            </div>
+            <main class="col ps-md-2 pt-2">
+                <a data-bs-target="#csidebar" data-bs-toggle="collapse" class="menubtn border rounded-1 px-2 py-2"><i class="fa fa-bars fa-2x"></i></a> <!-- icon btn -->
+                <hr>  <!-- line -->
+                <div class="row">
+
+<label style='font-family: "Verdana"; font-size: 12px; position: absolute; left: 71%; top: 1px;''>
+Per spostarsi nel grafo tascinare con il mouse.
+<br> Per andare alla descrizione di una persona fare doppio click sul vertice. 
+<br> Per spostare un vertice trascinarlo con il mouse
+<br>
+<br>
+<br>
+<br>
+<br> gen. Alfa: 1
+<br> gen. Z: 4
+<br> gen. Millenials/Y: 1
+<br> gen. X: 10
+<br> gen. Boomers: 11
+<br> gen. Silent: 14
+<br> gen. Greatest: 26
+<br> gen. Lost: 11
+<br>
+<br> clan Persich: 28
+<br> clan Vassallo: 17
+<br> clan Garibaldi: 13
+<br> clan Rausa: 10
+<br> clan Massaro: 9
+</label>
+<b>
+<label style='font-family: "Lucida Console"; font-size: 13px; position: absolute; left: 3%; top: 5px;' ><input onclick="centroMinimo()" type="radio" name="type" checked>parenti stretti</label>
+<label style='font-family: "Lucida Console"; font-size: 13px; position: absolute; left: 12.3%; top: 5px;' ><input onclick="albero()" type="radio" name="type">cronologico</label>
+<label style='font-family: "Lucida Console"; font-size: 13px; position: absolute; left: 19.4%; top: 5px;' ><input onclick="anello()" type="radio" name="type">anello</label>
+</b>
+<div id="container" style="width: 1000px; height: 700px; position: absolute; top: 23px; left: 2%; margin-left: 40px; "></div>
+
+<p id = "gatto" style="  border-left: 1px solid CadetBlue; margin-left: 1px; font-family: 'Courier'; "></p>
+                  
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}};</script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag-GitHub.js"></script> 
+    <script>renderMarkdown();</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS (needed for the collapse functionality) -->
+    <script src="/pwp/sidebar00.js"></script>
+    <script> createSidebar();</script>
+</body>
+</html>
